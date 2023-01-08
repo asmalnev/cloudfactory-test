@@ -1,0 +1,13 @@
+@import "src/styles/_vars";
+
+.alert {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: rgba($color_black, .3);
+
+    &.error {
+        background-color: rgba($color_red, .3);
+    }
+}

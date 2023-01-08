@@ -1,0 +1,39 @@
+@import "src/styles/_vars";
+
+.modal {
+    position: fixed;
+    min-height: 100%;
+    z-index: 100;
+
+    &, &__back {
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    &__back {
+        background-color: rgba($color_black, .5);
+        height: 100%;
+        z-index: 0;
+        position: absolute;
+    }
+
+    &__container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $color_white;
+        border-radius: 20px;
+        padding: 30px;
+        max-height: 90%;
+        max-width: 90%;
+        width: 600px;
+        overflow: hidden;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
